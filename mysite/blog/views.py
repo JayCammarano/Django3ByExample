@@ -8,8 +8,8 @@ from .forms import EmailPostForm, CommentForm
 from dotenv import load_dotenv
 from taggit.models import Tag
 
-from .models import Post
-from .forms import EmailPostForm
+from .models import Post, Comment
+from .forms import EmailPostForm, CommentForm
 # Create your views here.
 
 load_dotenv()
