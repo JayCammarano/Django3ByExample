@@ -1,9 +1,12 @@
+from os import environ
 from django.shortcuts import get_object_or_404, render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.core.mail import send_mail
-from taggit.models import Tag
-from os import environ
+from django.db.models import Count
+
+from .forms import EmailPostForm, CommentForm
 from dotenv import load_dotenv
+from taggit.models import Tag
 
 from .models import Post
 from .forms import EmailPostForm
@@ -36,11 +39,31 @@ def post_detail(request, year, month, day, post):
                                     status='published',
                                     publish__year=year,
                                     publish__month=month,
-                                    publish__day=day,
-    )
+                                    publish__day=day)
+    comments = post.comments.filter(active=True)
+
+    new_comment = None
+
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = post
+            new_comment.save()
+    else:
+        comment_form = CommentForm()    
+    post_tags_ids = post.tags.values_list('id', flat=True)
+    similar_posts = Post.published.filter(tags__in=post_tags_ids)\
+                                        .exclude(id=post.id)
+    similar_posts - similar_posts.annotate(same_tags=Count('tags'))\
+                                        .order_by('-same_tags','-publish')[:4]
     return render(request,
                 'blog/post/detail.html',
-                {'post': post})
+                {'post': post,
+                'comments': comments,
+                'new_comment': new_comment,
+                'comment_form': comment_form,
+                'similar_posts': similar_posts})
 
 def post_share(request, post_id):
     post = get_object_or_404(Post, id=post_id, status='published')
