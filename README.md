@@ -7,6 +7,7 @@ Projects include:
      - Add comments from the blog page, hide/show from admin page
      - Tag posts and view similar posts based on number of tags in common
      - Blog posts support markdown formatting
+     - Includes sitemap
   - social image bookmarking site
   - an online shop
   - e-learning platform
