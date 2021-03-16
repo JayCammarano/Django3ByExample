@@ -8,7 +8,7 @@ Projects include:
      - Tag posts and view similar posts based on number of tags in common
      - Blog posts support markdown formatting
      - Includes sitemap and rss feeds
-     - Added a search functionality using trigram similarity in the words of the title.
+     - Search functionality using trigram similarity in the words of the title
   - social image bookmarking site
   - an online shop
   - e-learning platform
