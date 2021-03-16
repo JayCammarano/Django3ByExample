@@ -1,6 +1,6 @@
 Following along with Antonio Melé - Django 3 By Example: Build powerful and reliable Python web applications from scratch (3 ed)
 
-Projects include: 
+# Projects include: 
   - Blog site
      - Add posts from an admin dashboard
      - Share posts via email
@@ -12,3 +12,6 @@ Projects include:
   - social image bookmarking site
   - an online shop
   - e-learning platform
+
+# Major Modifications:
+ - Creating one site with multiple apps instead of 4 separate sites
