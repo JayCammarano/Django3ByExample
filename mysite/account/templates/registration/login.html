@@ -22,4 +22,20 @@
         <p><a href="{% url "password_reset" %}">Forgot your password?</a></p>
         <p><a href="{% url "register" %}">Sign up</a></p>
     </div>
+    <div class="social">
+        <ul>
+            <li class="facebook">
+                <a href="{% url "social:begin" "facebook" %}">Sign 
+                in from Facebook</a>
+            </li>
+            <li class="twitter">
+                <a href="{% url "social:begin" "twitter" %}">Sign 
+                in from Twitter</a>
+            </li>
+            <li class="google">
+                <a href="{% url "social:begin" "google-oauth2" %}">Sign 
+                in from Google</a>
+            </li>
+        </ul>
+    </div>
 {% endblock %}
