@@ -15,3 +15,8 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
 
 # Major Modifications:
  - Creating one site with multiple apps instead of 4 separate sites
+
+# Dependancies:
+For image handling with Pillow:
+ - Zlib
+ - libjpeg
