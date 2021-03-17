@@ -28,4 +28,4 @@ Most dependancies are contained in the Pipfile, except:
 
 - For OAuth through social media sites:
    - [Rust](https://www.rust-lang.org/)
-   - Developer account with Facebook
+   - Developer accounts with Facebook, Twitter, Google
