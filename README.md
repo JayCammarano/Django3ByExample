@@ -13,6 +13,7 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
      - Authentication: login, logout, sign up, password reset + change
      - Authenticate with username or email via custom auth backend
      - Edit user's profile to include date of birth and profile pic
+     - Sign up/Sign in with OAuth
   - Online shop
   - E-learning platform
 
