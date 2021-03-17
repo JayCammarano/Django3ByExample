@@ -21,6 +21,7 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
 
 # Dependancies:
 Most dependancies are contained in the Pipfile, except:
+
 For image handling with Pillow:
  - Zlib
  - libjpeg
