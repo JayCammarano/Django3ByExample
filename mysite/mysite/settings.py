@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.postgres',
     'blog.apps.BlogConfig',
+    'images.apps.ImagesConfig',
     'taggit',
     'social_django',
     'django_extensions',
