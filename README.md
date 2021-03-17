@@ -11,6 +11,7 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
      - Search functionality using trigram similarity in the words of the title
   - Social image bookmarking site
      - Authentication: login, logout, sign up, password reset + change
+     - Authenticate with username or email
      - Edit user's profile to include date of birth and profile pic
   - Online shop
   - E-learning platform
@@ -19,6 +20,7 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
  - Creating one site with multiple apps instead of 4 separate sites
 
 # Dependancies:
+Most dependancies are contained in the Pipfile, except:
 For image handling with Pillow:
  - Zlib
  - libjpeg
