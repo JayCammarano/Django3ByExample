@@ -23,9 +23,9 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
 Most dependancies are contained in the Pipfile, except:
 
 - For image handling with Pillow:
-   - [Zlib](https://zlib.net/)
-   - [libjpeg](http://libjpeg.sourceforge.net/)
+    - [Zlib](https://zlib.net/)
+    - [libjpeg](http://libjpeg.sourceforge.net/)
 
 - For OAuth through social media sites:
-   - [Rust](https://www.rust-lang.org/)
-   - Developer accounts with Facebook, Twitter, Google
+    - [Rust](https://www.rust-lang.org/)
+    - Developer accounts with Facebook, Twitter, Google
