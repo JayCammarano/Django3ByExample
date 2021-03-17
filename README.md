@@ -9,9 +9,16 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
      - Blog posts support markdown formatting
      - Includes sitemap and rss feeds
      - Search functionality using trigram similarity in the words of the title
-  - social image bookmarking site
-  - an online shop
-  - e-learning platform
+  - Social image bookmarking site
+     - Authentication: login, logout, sign up, password reset + change
+     - Edit user's profile to include date of birth and profile pic
+  - Online shop
+  - E-learning platform
 
 # Major Modifications:
  - Creating one site with multiple apps instead of 4 separate sites
+
+# Dependancies:
+For image handling with Pillow:
+ - Zlib
+ - libjpeg
