@@ -10,6 +10,8 @@ Following along with Antonio Melé - Django 3 By Example: Build powerful and rel
      - Includes sitemap and rss feeds
      - Search functionality using trigram similarity in the words of the title
   - social image bookmarking site
+     - Authentication: login, logout, sign up, password reset + change
+     - Edit user's profile to include date of birth and profile pic 
   - an online shop
   - e-learning platform
 
